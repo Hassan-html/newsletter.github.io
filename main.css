@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  transition: all 0.2s ease;
+}
+* ul {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+.body {
+  margin: 0px 100px;
+}
+
+.bar {
+  display: none;
+}
+
+header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+}
+
+nav {
+  width: 420px;
+}
+nav .close {
+  display: none;
+}
+nav ul {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul a {
+  color: hsl(236deg, 13%, 42%);
+}
+nav ul a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
+.container {
+  margin: 30px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr, 1fr;
+}
+
+.head-img img {
+  width: 100%;
+}
+
+.box-1 {
+  grid-column: auto/span 2;
+}
+
+.box-2 {
+  height: 100%;
+  padding: 20px;
+  background-color: hsl(240deg, 100%, 5%);
+  grid-row: auto/span 2;
+  overflow: hidden;
+}
+.box-2 a {
+  color: white;
+}
+.box-2 a:hover {
+  color: hsl(35deg, 77%, 62%);
+}
+.box-2 h1 {
+  margin-top: 10px;
+  color: hsl(35deg, 77%, 62%);
+}
+.box-2 .box-2-p {
+  height: 95%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.box-2 .block {
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+  padding: 35px 0;
+}
+.box-2 p {
+  line-height: 25px;
+  font-size: 15px;
+  color: hsl(236deg, 13%, 42%);
+}
+.box-2 h3 {
+  margin-bottom: 10px;
+  font-size: medium;
+  font-weight: 800;
+}
+
+.box-3 {
+  font-size: 1.6rem;
+}
+
+.box-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.box-4 p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 15px;
+  line-height: 25px;
+}
+.box-4 button {
+  height: 40px;
+  width: 9.5rem;
+  border-radius: 0px;
+  background-color: hsl(5deg, 85%, 63%);
+  border: none;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box-4 button:hover {
+  background-color: hsl(240deg, 100%, 5%);
+  color: white;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards h2 {
+  color: hsl(233deg, 8%, 79%);
+}
+.cards a {
+  color: hsl(240deg, 100%, 5%);
+}
+.cards a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+.cards p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 15px;
+}
+
+.card-box {
+  margin: 40px 0px;
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.card-box img {
+  width: 30%;
+}
+
+.card-txt {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .body {
+    margin: 0px 20px;
+  }
+  .bar {
+    display: block;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .box-2 {
+    order: 4;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    top: 0;
+    position: absolute !important;
+    width: 70%;
+    height: 100%;
+    padding: 30px 20px;
+    right: 0;
+    gap: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(900px);
+  }
+  nav img {
+    width: 8%;
+  }
+  nav .close {
+    display: block;
+    align-self: flex-end;
+  }
+  nav ul {
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: medium;
+    gap: 20px;
+  }
+  .open {
+    transform: translateX(0);
+  }
+  .head-img {
+    content: url(../images/image-web-3-mobile.jpg);
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
